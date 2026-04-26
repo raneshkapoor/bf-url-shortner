@@ -25,7 +25,7 @@ public class ShortnerController {
         String shortUrl = shortenService.shortenURL(input);
 
         ShortnerOutput output = new ShortnerOutput();
-        output.setShortURL("localhost:8080/api/redirect/" + shortUrl);
+        output.setShortURL("https://bf-url-shortner.onrender.com:443/api/redirect/" + shortUrl);
 
         return output;
     }
